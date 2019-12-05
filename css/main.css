@@ -46,3 +46,61 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.main {
+	font: 13px "Lucida Sans Unicode", sans-serif;
+}
+
+/* Form Styling */
+.form-style {
+	margin: 10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+}
+
+.form-style li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+.form-style label {
+	margin: 0 0 3px 0;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+}
+
+.form-style input[type=text],
+select {
+	box-sizing: border-box;
+	border: 1px solid #808080;
+	padding: 7px;
+	margin: 0px;
+	outline: none;
+}
+
+.form-style .field-split {
+	width: 49%;
+}
+
+.form-style .field-select {
+	width: 100%;
+}
+
+.form-style button {
+	background: #428bca;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+
+.form-style button:hover {
+	background: #3083cc;
+	box-shadow: none;
+}
+
+.form-style .required {
+	color: red;
+}
