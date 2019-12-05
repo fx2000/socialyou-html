@@ -11,11 +11,13 @@
 <body>
   <section class="main">
     <header class="topbar">
-      <h1>New Student Signup</h1>
+      <div class="title">
+        <h1>New Student Signup</h1>
+      </div>
     </header>
-    <div class="signup-form">
+    <div class="form-style">
       <form id="new-student" action="/">
-        <ul class="form-style">
+        <ul>
           <li>
             <label for="first-name">Full Name <span class="required">*</span></label>
             <input class="field-split" type="text" name="first-name" id="first-name" placeholder="First" required tabindex=1>
@@ -37,9 +39,18 @@
       </form>
     </div>
     <div class="grid">
-      <div id="first-name-grid"><!-- First Name goes here --></div>
-      <div id="last-name-grid"><!-- Last Name goes here --></div>
-      <div id="course-grid"><!-- Course goes here --></div>
+      <div class="col">
+        <h2>First Name</h2>
+        <ul id="first-name-grid"><!-- First Names go here --></ul>
+      </div>
+      <div class="col">
+        <h2>Last Name</h2>
+        <ul id="last-name-grid"><!-- Last Names go here --></ul>
+      </div>
+      <div class="col">
+        <h2>Course</h2>
+        <ul id="course-grid"><!-- Courses go here --></ul>
+      </div>
     </div>
     <footer>
 
@@ -64,9 +75,9 @@
         .prop('selected', false);
 
       // Add data to grid
-      $("#first-name-grid").append(firstName);
-      $("#last-name-grid").append(lastName);
-      $("#course-grid").append(course);
+      $("#first-name-grid").append("<li>" + firstName + "</li>");
+      $("#last-name-grid").append("<li>" + lastName + "</li>");
+      $("#course-grid").append("<li>" + course + "</li>");
     });
   </script>
 
